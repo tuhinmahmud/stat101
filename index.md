@@ -1,5 +1,5 @@
 ---
-title       : 
+title       : Statistics-101 using R
 subtitle    : 
 author      : 
 job         : 
@@ -11,15 +11,15 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Read-And-Delete
+## Power 
+https://tuhinmahmaud.shinyapps.io/PowerApp/
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+
 
 --- .class #id 
 
-## Slide 2
+## Central limit Theorem
+https://tuhinmahmaud.shinyapps.io/CentralLimitApp/
 
 
 
