@@ -66,32 +66,44 @@
 <slide class="" id="slide-3" style="background:;">
   <article data-timings="">
     <pre><code class="r">X &lt;- data.frame(&quot;attributes&quot;=NA,&quot;Pearson&#39;r&quot;=NA,&quot;Spearman&#39;s r&quot;=NA)
-X[1][1]&lt;-&quot;trend&quot;;X[1][2]&lt;-&quot;linear&quot;; X[1][3]&lt;-&quot;monotonic&quot;
+X[1][1]&lt;-&quot;trend&quot;
+X[1][2]&lt;-&quot;linear&quot; 
 </code></pre>
 
 <pre><code>## Warning in `[&lt;-.data.frame`(`*tmp*`, 1, value = structure(list(attributes
 ## = &quot;trend&quot;, : provided 2 variables to replace 1 variables
 </code></pre>
 
+<pre><code class="r">X[1][3]&lt;-&quot;monotonic&quot;
+</code></pre>
+
 <pre><code>## Error in `[&lt;-.data.frame`(`*tmp*`, 3, value = &quot;monotonic&quot;): new columns would leave holes after existing columns
 </code></pre>
 
-<pre><code class="r">X[2][1]&lt;-&quot;sampling distribution&quot;;X[2][2]&lt;-&quot;normal&quot;;X[2][3]&lt;-&quot;non normal&quot;
+<pre><code class="r">X[2][1]&lt;-&quot;sampling distribution&quot;
+X[2][2]&lt;-&quot;normal&quot;
 </code></pre>
 
 <pre><code>## Warning in `[&lt;-.data.frame`(`*tmp*`, 2, value = structure(list(Pearson.r =
 ## &quot;sampling distribution&quot;, : provided 2 variables to replace 1 variables
 </code></pre>
 
+<pre><code class="r">X[2][3]&lt;-&quot;non normal&quot;
+</code></pre>
+
 <pre><code>## Error in `[&lt;-.data.frame`(`*tmp*`, 3, value = &quot;non normal&quot;): new columns would leave holes after existing columns
 </code></pre>
 
-<pre><code class="r">X[3][1]&lt;-&quot;data&quot;;X[3][2]&lt;-&quot;interval&quot;;X[3][3]&lt;-&quot;non parametric&quot;
+<pre><code class="r">X[3][1]&lt;-&quot;data&quot;
+X[3][2]&lt;-&quot;interval&quot;
 </code></pre>
 
 <pre><code>## Warning in `[&lt;-.data.frame`(`*tmp*`, 3, value =
 ## structure(list(Spearman.s.r = &quot;data&quot;, : provided 2 variables to replace 1
 ## variables
+</code></pre>
+
+<pre><code class="r">X[3][3]&lt;-&quot;non parametric&quot;
 </code></pre>
 
 <pre><code>## Error in `[&lt;-.data.frame`(`*tmp*`, 3, value = &quot;non parametric&quot;): new columns would leave holes after existing columns

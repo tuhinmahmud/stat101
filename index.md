@@ -25,7 +25,8 @@ https://tuhinmahmaud.shinyapps.io/CentralLimitApp/
 
 ```r
 X <- data.frame("attributes"=NA,"Pearson'r"=NA,"Spearman's r"=NA)
-X[1][1]<-"trend";X[1][2]<-"linear"; X[1][3]<-"monotonic"
+X[1][1]<-"trend"
+X[1][2]<-"linear" 
 ```
 
 ```
@@ -33,12 +34,17 @@ X[1][1]<-"trend";X[1][2]<-"linear"; X[1][3]<-"monotonic"
 ## = "trend", : provided 2 variables to replace 1 variables
 ```
 
+```r
+X[1][3]<-"monotonic"
+```
+
 ```
 ## Error in `[<-.data.frame`(`*tmp*`, 3, value = "monotonic"): new columns would leave holes after existing columns
 ```
 
 ```r
-X[2][1]<-"sampling distribution";X[2][2]<-"normal";X[2][3]<-"non normal"
+X[2][1]<-"sampling distribution"
+X[2][2]<-"normal"
 ```
 
 ```
@@ -46,18 +52,27 @@ X[2][1]<-"sampling distribution";X[2][2]<-"normal";X[2][3]<-"non normal"
 ## "sampling distribution", : provided 2 variables to replace 1 variables
 ```
 
+```r
+X[2][3]<-"non normal"
+```
+
 ```
 ## Error in `[<-.data.frame`(`*tmp*`, 3, value = "non normal"): new columns would leave holes after existing columns
 ```
 
 ```r
-X[3][1]<-"data";X[3][2]<-"interval";X[3][3]<-"non parametric"
+X[3][1]<-"data"
+X[3][2]<-"interval"
 ```
 
 ```
 ## Warning in `[<-.data.frame`(`*tmp*`, 3, value =
 ## structure(list(Spearman.s.r = "data", : provided 2 variables to replace 1
 ## variables
+```
+
+```r
+X[3][3]<-"non parametric"
 ```
 
 ```
