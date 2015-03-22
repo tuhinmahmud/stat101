@@ -23,16 +23,6 @@ https://tuhinmahmaud.shinyapps.io/CentralLimitApp/
 
 ---  Spearman's p and Pearson's r
 
-```
-## Loading required package: panda
-```
-
-```
-## Warning in library(package, lib.loc = lib.loc, character.only = TRUE,
-## logical.return = TRUE, : there is no package called 'panda'
-```
-
-
 ------------------------------------------------
      attributes        Pearson.r   Spearman.s.r 
 --------------------- ----------- --------------
