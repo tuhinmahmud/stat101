@@ -6,3 +6,4 @@ xtable
 graph
 Rgraphviz
 BiocInstaller
+googleVis

@@ -46,7 +46,12 @@
     <h2>Varible types</h2>
   </hgroup>
   <article data-timings="">
-    
+    <ol>
+<li>Interval</li>
+<li>Categorical</li>
+<li>Ordinal</li>
+</ol>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -71,20 +76,13 @@
     <h2>Input and Output variables</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code>##              name          Parent
-## 1 Input Data Type            &lt;NA&gt;
-## 2        Interval Input Data Type
-</code></pre>
+    <pre><code class="r">df&lt;-data.frame(&quot;name&quot;=&quot;Input Data Type&quot;,&quot;Parent&quot;=NA,&quot;value&quot;=10,&quot;Fac&quot;=2)
+df&lt;-rbind(df,setNames(data.frame(&quot;Interval&quot;,&quot;Input Data Type&quot;,10,2,stringsAsFactors       = FALSE),names(df)))
 
-<pre><code>##              name          Parent
-## 1 Input Data Type            &lt;NA&gt;
-## 2     Categorical Input Data Type
-</code></pre>
-
-<pre><code>## Error in eval(expr, envir, enclos): could not find function &quot;gvisOrgChart&quot;
-</code></pre>
-
-<pre><code>## Error in curve(expr = x, from = from, to = to, xlim = xlim, ylab = ylab, : &#39;expr&#39; did not evaluate to an object of length &#39;n&#39;
+df&lt;- rbind(df,setNames(data.frame(&quot;Categorical&quot;,&quot;Input Data Type&quot;,10,2, stringsAsFactors       = FALSE),names(df)))
+names&lt;-gvisOrgChart(df,options=list(width=600,height=250,
+                                    size=&#39;large&#39;, allowCollapse=TRUE))
+plot(names)
 </code></pre>
 
   </article>

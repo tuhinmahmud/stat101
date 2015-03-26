@@ -11,7 +11,10 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 --- 
 
-## Varible types
+## Varible types 
+1. Interval
+2. Categorical
+3. Ordinal
 
 
 --- 
@@ -29,22 +32,13 @@ knit        : slidify::knit2slides
 ## Input and Output variables
 
 
-```
-##              name          Parent
-## 1 Input Data Type            <NA>
-## 2        Interval Input Data Type
-```
 
-```
-##              name          Parent
-## 1 Input Data Type            <NA>
-## 2     Categorical Input Data Type
-```
+```r
+df<-data.frame("name"="Input Data Type","Parent"=NA,"value"=10,"Fac"=2)
+df<-rbind(df,setNames(data.frame("Interval","Input Data Type",10,2,stringsAsFactors       = FALSE),names(df)))
 
-```
-## Error in eval(expr, envir, enclos): could not find function "gvisOrgChart"
-```
-
-```
-## Error in curve(expr = x, from = from, to = to, xlim = xlim, ylab = ylab, : 'expr' did not evaluate to an object of length 'n'
+df<- rbind(df,setNames(data.frame("Categorical","Input Data Type",10,2, stringsAsFactors       = FALSE),names(df)))
+names<-gvisOrgChart(df,options=list(width=600,height=250,
+                                    size='large', allowCollapse=TRUE))
+plot(names)
 ```
