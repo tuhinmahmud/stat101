@@ -1,6 +1,6 @@
 ---
-title       : Statistics-101  
-subtitle    : using R
+title       : Statistics 101
+subtitle    : Deciding what on Statistic test choose
 author      : Tuhin Mahmud
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
@@ -9,29 +9,34 @@ hitheme     : tomorrow      #
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
+--- 
+
+## Varible types
+
+
+--- 
+
+## Assumptions of data and sampling distribution
+
+1. Normality assumption
+
+2. Homogeneity of Variance 
+
+3. Independence of sample
+
 ---
 
-## Power 
-https://tuhinmahmaud.shinyapps.io/PowerApp/
+## Input and Output variables
 
-
-
---- .class #id 
-
-## Central limit Theorem
-https://tuhinmahmaud.shinyapps.io/CentralLimitApp/
-
----  Spearman's p and Pearson's r
-```{r echo=FALSE}
-
-X <- data.frame("attributes"=NA,"Pearson'r"=NA,"Spearman's r"=NA)
-X[1,1]<-"trend";X[1,2]<-"linear";X[1,3]<-"monotonic"
-X[2,1]<-"sampling distribution"; X[2,2]<-"normal"; X[2,3]<-"non normal"
-X[3,1]<-"data"; X[3,2]<-"interval";X[3,3]<-"non parametric"
+```{r echo=FALSE,message=FALSE}
+setwd("C:/Users/IBM_ADMIN/Documents/slidify")
+X <- data.frame("Data type"=NA,"Interval"=NA,"Catagorical"=NA)
+X[3,1]<-NA; X[2,2]<-"Interval"; X[2,3]<-"Categorical"
+X[2,1]<-"Interval";X[1,2]<-"Correlation Regression";X[1,3]<-"Logistic Regression"
+X[3,1]<-"Categorical"; X[2,2]<-"t-test\nz-test\nANOVA"; X[2,3]<-"Chi-square"
+require(xtable)
 require(pander)
-pander(X[1:3,1:3])
 ```
-
---- t-test
-
-
+```{r, results='asis'}
+#print(xtable(X[1:3,1:3]))
+pandoc.table(X[1:3,1:3])
