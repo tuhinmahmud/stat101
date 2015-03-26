@@ -1,6 +1,6 @@
 ---
-title       : Statistics-101  
-subtitle    : using R
+title       : Statistics 101
+subtitle    : Deciding what on Statistic test choose
 author      : Tuhin Mahmud
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
@@ -9,30 +9,39 @@ hitheme     : tomorrow      #
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
+--- 
+
+## Varible types
+
+
+--- 
+
+## Assumptions of data and sampling distribution
+
+1. Normality assumption
+
+2. Homogeneity of Variance 
+
+3. Independence of sample
+
 ---
 
-## Power 
-https://tuhinmahmaud.shinyapps.io/PowerApp/
+## Input and Output variables
 
 
 
---- .class #id 
-
-## Central limit Theorem
-https://tuhinmahmaud.shinyapps.io/CentralLimitApp/
-
----  Spearman's p and Pearson's r
-
-<!-- html table generated in R 3.1.0 by xtable 1.7-4 package -->
-<!-- Sat Mar 21 21:46:40 2015 -->
-<table border=1>
-<tr> <th>  </th> <th> attributes </th> <th> Pearson.r </th> <th> Spearman.s.r </th>  </tr>
-  <tr> <td align="right"> 1 </td> <td> trend </td> <td> linear </td> <td> monotonic </td> </tr>
-  <tr> <td align="right"> 2 </td> <td> sampling distribution </td> <td> normal </td> <td> non normal </td> </tr>
-  <tr> <td align="right"> 3 </td> <td> data </td> <td> interval </td> <td> non parametric </td> </tr>
-   </table>
-
---- Choosing a Statistical Test
+```r
+#print(xtable(X[1:3,1:3]))
+pandoc.table(X[1:3,1:3])
+```
 
 
+------------------------------------------------------
+ Data.type         Interval            Catagorical    
+----------- ---------------------- -------------------
+    NA      Correlation Regression Logistic Regression
 
+ Interval    t-test z-test ANOVA       Chi-square     
+
+Categorical           NA                   NA         
+------------------------------------------------------

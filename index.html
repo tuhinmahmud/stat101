@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Statistics-101</title>
+  <title>Statistics 101</title>
   <meta charset="utf-8">
-  <meta name="description" content="Statistics-101">
+  <meta name="description" content="Statistics 101">
   <meta name="author" content="Tuhin Mahmud">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -32,8 +32,8 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1>Statistics-101</h1>
-    <h2>using R</h2>
+    <h1>Statistics 101</h1>
+    <h2>Deciding what on Statistic test choose</h2>
     <p>Tuhin Mahmud<br/></p>
   </hgroup>
   <article></article>  
@@ -43,38 +43,37 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Power</h2>
+    <h2>Varible types</h2>
   </hgroup>
   <article data-timings="">
-    <p><a href="https://tuhinmahmaud.shinyapps.io/PowerApp/">https://tuhinmahmaud.shinyapps.io/PowerApp/</a></p>
-
+    
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="" id="slide-2" style="background:;">
   <hgroup>
-    <h2>Central limit Theorem</h2>
+    <h2>Assumptions of data and sampling distribution</h2>
   </hgroup>
   <article data-timings="">
-    <p><a href="https://tuhinmahmaud.shinyapps.io/CentralLimitApp/">https://tuhinmahmaud.shinyapps.io/CentralLimitApp/</a></p>
+    <ol>
+<li><p>Normality assumption</p></li>
+<li><p>Homogeneity of Variance </p></li>
+<li><p>Independence of sample</p></li>
+</ol>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Input and Output variables</h2>
+  </hgroup>
   <article data-timings="">
-    <!-- html table generated in R 3.1.0 by xtable 1.7-4 package -->
-
-<!-- Sat Mar 21 21:46:40 2015 -->
-
-<table border=1>
-<tr> <th>  </th> <th> attributes </th> <th> Pearson.r </th> <th> Spearman.s.r </th>  </tr>
-  <tr> <td align="right"> 1 </td> <td> trend </td> <td> linear </td> <td> monotonic </td> </tr>
-  <tr> <td align="right"> 2 </td> <td> sampling distribution </td> <td> normal </td> <td> non normal </td> </tr>
-  <tr> <td align="right"> 3 </td> <td> data </td> <td> interval </td> <td> non parametric </td> </tr>
-   </table>
+    <pre><code class="r">#print(xtable(X[1:3,1:3]))
+pandoc.table(X[1:3,1:3])
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->
@@ -82,7 +81,17 @@
 
 <slide class="" id="slide-4" style="background:;">
   <article data-timings="">
-    
+    <p>Data.type         Interval            Catagorical    </p>
+
+<hr>
+
+<pre><code>NA      Correlation Regression Logistic Regression
+</code></pre>
+
+<p>Interval    t-test z-test ANOVA       Chi-square     </p>
+
+<h2>Categorical           NA                   NA         </h2>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -93,19 +102,19 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Power'>
+        data-slide=1 title='Varible types'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Central limit Theorem'>
+        data-slide=2 title='Assumptions of data and sampling distribution'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title=''>
+        data-slide=3 title='Input and Output variables'>
          3
       </a>
     </li>

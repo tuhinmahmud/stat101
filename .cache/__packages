@@ -3,3 +3,6 @@ devtools
 slidify
 pander
 xtable
+graph
+Rgraphviz
+BiocInstaller
