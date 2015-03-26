@@ -34,5 +34,8 @@ df<-data.frame("name"="Input Data Type","Parent"=NA)
 rbind(df,setNames(data.frame("Interval","Input Data Type"),names(df)))
 rbind(df,setNames(data.frame("Categorical","Input Data Type"),names(df)))
 ```
-names<-gvisOrgChart(df,options=list(width=600,height=250,size='large', allowCollapse=TRUE)
+```{r echo=FALSE}
+names<-gvisOrgChart(df,options=list(width=600,height=250,
+                                    size='large', allowCollapse=TRUE))
 plot(names)
+```

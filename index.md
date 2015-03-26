@@ -40,5 +40,11 @@ knit        : slidify::knit2slides
 ## 1 Input Data Type            <NA>
 ## 2     Categorical Input Data Type
 ```
-names<-gvisOrgChart(df,options=list(width=600,height=250,size='large', allowCollapse=TRUE)
-plot(names)
+
+```
+## Error in eval(expr, envir, enclos): could not find function "gvisOrgChart"
+```
+
+```
+## Error in curve(expr = x, from = from, to = to, xlim = xlim, ylab = ylab, : 'expr' did not evaluate to an object of length 'n'
+```
