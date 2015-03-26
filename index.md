@@ -29,19 +29,16 @@ knit        : slidify::knit2slides
 ## Input and Output variables
 
 
-
-```r
-#print(xtable(X[1:3,1:3]))
-pandoc.table(X[1:3,1:3])
+```
+##              name          Parent
+## 1 Input Data Type            <NA>
+## 2        Interval Input Data Type
 ```
 
-
-------------------------------------------------------
- Data.type         Interval            Catagorical    
------------ ---------------------- -------------------
-    NA      Correlation Regression Logistic Regression
-
- Interval    t-test z-test ANOVA       Chi-square     
-
-Categorical           NA                   NA         
-------------------------------------------------------
+```
+##              name          Parent
+## 1 Input Data Type            <NA>
+## 2     Categorical Input Data Type
+```
+names<-gvisOrgChart(df,options=list(width=600,height=250,size='large', allowCollapse=TRUE)
+plot(names)

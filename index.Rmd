@@ -30,13 +30,9 @@ knit        : slidify::knit2slides
 
 ```{r echo=FALSE,message=FALSE}
 setwd("C:/Users/IBM_ADMIN/Documents/slidify")
-X <- data.frame("Data type"=NA,"Interval"=NA,"Catagorical"=NA)
-X[3,1]<-NA; X[2,2]<-"Interval"; X[2,3]<-"Categorical"
-X[2,1]<-"Interval";X[1,2]<-"Correlation Regression";X[1,3]<-"Logistic Regression"
-X[3,1]<-"Categorical"; X[2,2]<-"t-test\nz-test\nANOVA"; X[2,3]<-"Chi-square"
-require(xtable)
-require(pander)
+df<-data.frame("name"="Input Data Type","Parent"=NA)
+rbind(df,setNames(data.frame("Interval","Input Data Type"),names(df)))
+rbind(df,setNames(data.frame("Categorical","Input Data Type"),names(df)))
 ```
-```{r, results='asis'}
-#print(xtable(X[1:3,1:3]))
-pandoc.table(X[1:3,1:3])
+names<-gvisOrgChart(df,options=list(width=600,height=250,size='large', allowCollapse=TRUE)
+plot(names)
