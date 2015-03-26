@@ -32,11 +32,11 @@ knit        : slidify::knit2slides
 ## Input and Output variables
 
 ```{r echo=FALSE,message=FALSE}
-library("googleVis")
+require("googleVis")
  setwd("C:/Users/IBM_ADMIN/Documents/GitHub/stat101")
 
 ```
-```{r}
+```{r opts.label = 'interactive', results = 'asis'}
 df<-data.frame("name"="Input Data Type","Parent"=NA,"value"=10,"Fac"=2)
 df<-rbind(df,setNames(data.frame("Interval","Input Data Type",10,2,stringsAsFactors       = FALSE),names(df)))
 
